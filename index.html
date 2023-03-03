@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crossfit project</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <button class="theme-button">Dark theme</button>
+    <div class="container">
+      <h1>🏋️‍♀️ Crossfit</h1>
+      <h2>The sport of fitness</h2>
+
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/340/original/principais-erros-exercicios-crossfit.jpg?1675783446"
+          alt=""
+        />
+        <a href="https://www.crossfit.com/" target="_blank">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/341/original/images.jpeg?1675783511"
+            alt=""
+            class="middle-image"
+          />
+        </a>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/339/original/crossfit-levantamento-de-peso-treino-1659560241968_v2_4x3.jpg?1675783416"
+          alt=""
+        />
+      </div>
+      <p>
+        Crossfit is a relatively new sport and fitness regime which describes
+        itself as a mix of various movements performed at high intensity.
+        Originally founded and developed by Greg Glassman, workouts might
+        include Olympic weightlifting, gymnastics and cardio. The sport's most
+        famous athletes including Mat Fraser, Tia-Clair Toomey, Annie
+        Thorisdottir and Sam Briggs. Every year the sport continuously grows to
+        include more nationalities and further movement styles.
+      </p>
+
+      <div class="button">
+        <a href="https://www.youtube.com/@CrossFitGamesTV"
+          >Crossfit on Youtube
+        </a>
+      </div>
+    </div>
+    <footer>Coded by Melissa Matos</footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>

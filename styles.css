@@ -1,0 +1,113 @@
+body {
+  background: linear-gradient(to right, rgb(52, 232, 158), rgb(15, 52, 67));
+}
+h1 {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+h2 {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 500;
+}
+
+img {
+  height: fit-content;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 10px;
+  aspect-ratio: 1/0.7;
+}
+
+.container {
+  margin: 20px auto;
+  display: block;
+  max-width: 600px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  line-height: 20px;
+}
+
+p {
+  text-align: left;
+  line-height: 1.5;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+footer {
+  text-align: center;
+  margin: auto;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+}
+
+.theme-button {
+  margin: 0 auto;
+  display: block;
+  font-size: 15px;
+  background: black;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.theme-button:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+  scale: 1.1;
+  transition: 200ms;
+}
+
+.middle-image {
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+}
+
+.middle-image:hover {
+  filter: grayscale(50%);
+  transform: scale(1.5);
+}
+
+.button {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  color: black;
+  padding: 10px 18px;
+  border-radius: 15px;
+  font-size: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: none;
+}
+
+.dark {
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(50, 50, 50) 0%,
+    rgb(0, 0, 0) 99.4%
+  );
+  color: white;
+}
+
+.dark .container {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.dark a {
+  color: rgb(52, 232, 158);
+}
